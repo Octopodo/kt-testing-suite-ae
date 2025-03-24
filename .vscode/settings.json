@@ -1,0 +1,27 @@
+{
+    "prettier.tabWidth": 4,
+    "prettier.useTabs": false,
+    "prettier.printWidth": 80,
+
+    "editor.tabSize": 4,
+    "workbench.colorCustomizations": {
+        "activityBar.activeBackground": "#1b0a71",
+        "activityBar.background": "#1b0a71",
+        "activityBar.foreground": "#e7e7e7",
+        "activityBar.inactiveForeground": "#e7e7e799",
+        "activityBarBadge.background": "#b02a10",
+        "activityBarBadge.foreground": "#e7e7e7",
+        "commandCenter.border": "#e7e7e799",
+        "sash.hoverBorder": "#1b0a71",
+        "statusBar.background": "#100642",
+        "statusBar.foreground": "#e7e7e7",
+        "statusBarItem.hoverBackground": "#1b0a71",
+        "statusBarItem.remoteBackground": "#100642",
+        "statusBarItem.remoteForeground": "#e7e7e7",
+        "titleBar.activeBackground": "#100642",
+        "titleBar.activeForeground": "#e7e7e7",
+        "titleBar.inactiveBackground": "#10064299",
+        "titleBar.inactiveForeground": "#e7e7e799"
+    },
+    "peacock.color": "#100642"
+}

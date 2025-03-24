@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "ES3",
+    "module": "CommonJS",
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "lib": [],
+    "sourceMap": true,
+    "types": [
+      "./node_modules/kt-core/src/lib/json2",
+      "./node_modules/types-for-adobe/shared/global",
+      "./node_modules/types-for-adobe/shared/JavaScript",
+      "./node_modules/types-for-adobe/AfterEffects/23.0"
+    ]
+  },
+  "include": [
+    "src"
+  ]
+}

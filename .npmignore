@@ -1,0 +1,6 @@
+vscode
+dist
+dist.test
+testProject
+vite.config.ts
+vite.es.config.ts

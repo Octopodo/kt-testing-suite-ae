@@ -1,0 +1,15 @@
+{
+    "build-tests": {
+        "input": "src/tests/index.test.ts",
+        "output": "dist.test/index.test.js",
+        "watch": false,
+        "uglify": true,
+        "minify": true
+    },
+    "build-tests-debug": {
+        "input": "src/tests/index.test.ts",
+        "output": "dist.test/index.test.js",
+        "watch": false,
+        "uglify": false
+    }
+}

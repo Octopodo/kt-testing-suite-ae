@@ -3,7 +3,7 @@ import {
     type Matcher,
     type Expect
 } from 'kt-testing-suite-core';
-import { compMatchers } from './matchers/compMatchers';
+
 import { projectItemMatchers } from './matchers/projectItemMatchers';
 
 export namespace AE {

@@ -11,61 +11,36 @@ export const projectItemMatchers: Matcher<any> = {
         expect(this.actual).toBeInstanceOf(FolderItem);
         return this;
     },
-    toBeFootage: function () {
+    toBeAudio: function () {
+        expect(this.actual).not().toBeInstanceOf(CompItem);
         expect(this.actual).toBeInstanceOf(FootageItem);
-        return this;
-    },
-    toBeImage: function () {
-        const actual = this.actual as unknown as FootageItem;
-        expect(actual).not().toBeComp();
-        expect(actual).not().toBeFolder();
-        expect(actual).not().hasAudio();
-        expect(actual).hasVideo();
-        expect(actual).toHaveDuration(0);
+        expect(this.actual).toHaveProperty('hasAudio', true);
+        expect(this.actual).toHaveProperty('hasVideo', false);
         return this;
     },
     toBeVideo: function () {
-        const actual = this.actual as unknown as FootageItem;
-        expect(actual).not().toBeComp();
-        expect(actual).toBeFootage();
-        expect(actual).hasVideo();
-        expect(actual.duration).toBeGreaterThan(0);
+        expect(this.actual).not().toBeInstanceOf(CompItem);
+        expect(this.actual).toBeInstanceOf(FootageItem);
+        expect(this.actual).toHaveProperty('hasVideo', true);
+        return this;
+    },
+    toBeImage: function () {
+        expect(this.actual).not().toBeInstanceOf(CompItem);
+        expect(this.actual).toBeInstanceOf(FootageItem);
+        expect(this.actual).toHaveProperty('hasVideo', true);
+        expect(this.actual).toHaveProperty('duration', 0);
+        expect(this.actual).toHaveProperty('hasAudio', false);
         return this;
     },
     toBeItem: function () {
-        expect(this.actual).toPassAnyOf([
+        expect(this.actual).toPassAny([
             'toBeComp',
             'toBeFolder',
-            'toBeFootage',
             'toBeAudio',
-            'toBeVideo'
+            'toBeVideo',
+            'toBeImage'
         ]);
         return this;
-    },
-    toBeAudio: function () {
-        expect(this.actual).not().toBeComp();
-        expect(this.actual).toBeFootage();
-        expect(this.actual).hasAudio();
-        expect(this.actual).not().hasVideo();
-        return this;
-    },
-
-    toHasAudio: function () {
-        const actual = this.actual as unknown as FootageItem;
-        expect(actual).toHaveProperty('hasAudio');
-        expect(actual.hasAudio).toBe(true);
-        return this;
-    },
-    toHasVideo: function () {
-        const actual = this.actual as unknown as FootageItem;
-        expect(actual).toHaveProperty('hasVideo');
-        expect(actual.hasVideo).toBe(true);
-        return this;
-    },
-    toHaveDuration: function (duration: number) {
-        const actual = this.actual as unknown as FootageItem;
-        expect(actual).toHaveProperty('duration');
-        expect(actual.duration).toBe(duration);
-        return this;
     }
+
 };

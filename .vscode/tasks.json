@@ -8,6 +8,14 @@
             "group": "build",
             "problemMatcher": ["$tsc"],
             "detail": "Builds the test files before running them"
+        },
+        {
+            "label": "Debug Build Tests",
+            "type": "npm",
+            "script": "build-tests-debug",
+            "group": "build",
+            "problemMatcher": ["$tsc"],
+            "detail": "Builds the test files before running them"
         }
     ]
 }

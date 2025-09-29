@@ -1,3 +1,5 @@
+![KT Testing Suite Banner](docs/img/banner_testing_ae.jpg)
+
 # KT Testing Suite AE
 
 Extension of the KT Testing Suite for Adobe After Effects, providing specific matchers for testing After Effects scripts in ExtendScript.

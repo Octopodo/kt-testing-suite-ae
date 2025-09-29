@@ -60,9 +60,11 @@ Example output:
 Suite: Layer Tests
   Test: should be a solid layer with correct opacity
     ✅ Passed
+  Test: should have specific scale and position
+    ✅ Passed
 
 Test Results:
-Passed: 1
+Passed: 2
 Failed: 0
 ```
 

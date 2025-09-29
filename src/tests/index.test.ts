@@ -3,10 +3,12 @@ import {
     it,
     expect,
     runTests,
-    getSuites
-} from 'kt-testing-suite-core';
+    getSuites,
+} from "kt-testing-suite-core";
 
-import { AE } from '../expect';
+import { AE } from "../expect";
 
-import './project.test';
+import "./project.test";
+import "./projectItemMatchers.test";
+import "./layerMatchers.test";
 runTests();

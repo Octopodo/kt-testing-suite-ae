@@ -17,7 +17,8 @@
     "kt-core": "*"
   },
   "devDependencies": {
+    "kt-extendscript-builder": "^1.6.4",
     "kt-testing-suite-core": "^1.6.3",
-    "kt-extendscript-builder": "^1.6.4"
+    "prettier": "^3.6.2"
   }
 }

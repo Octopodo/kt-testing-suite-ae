@@ -1,24 +1,24 @@
 {
-  "name": "kt-testing-suite-ae",
-  "version": "1.0.0",
-  "description": "Testing matchers for After Effects extensions",
-  "author": "Miguel de Mendoza",
-  "main": "src/index.ts",
-  "license": "MIT",
-  "scripts": {
-    "build-tests": "kt-build build-tests",
-    "build-tests-debug": "kt-build build-tests-debug"
-  },
-  "files": [
-    "src",
-    "tsconfig.json"
-  ],
-  "dependencies": {
-    "kt-core": "*"
-  },
-  "devDependencies": {
-    "kt-extendscript-builder": "^1.6.4",
-    "kt-testing-suite-core": "^1.6.3",
-    "prettier": "^3.6.2"
-  }
+    "name": "kt-testing-suite-ae",
+    "version": "1.0.1",
+    "description": "Testing matchers for After Effects extensions",
+    "author": "Miguel de Mendoza",
+    "main": "src/index.ts",
+    "license": "MIT",
+    "scripts": {
+        "build-tests": "kt-build build-tests",
+        "build-tests-debug": "kt-build build-tests-debug"
+    },
+    "files": [
+        "src",
+        "tsconfig.json"
+    ],
+    "dependencies": {
+        "kt-core": "*"
+    },
+    "devDependencies": {
+        "kt-extendscript-builder": "^1.6.4",
+        "kt-testing-suite-core": "^1.6.3",
+        "prettier": "^3.6.2"
+    }
 }
